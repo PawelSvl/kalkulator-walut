@@ -1,7 +1,7 @@
 function calculator() {
 
     const dolar = 3.69;
-    const euro = 3.75;
+    const euro = 4.30;
     const nic = 1;
     const liczba = document.querySelector(".liczba1").value;
     const waluta = document.querySelector(".currency-1").value;
