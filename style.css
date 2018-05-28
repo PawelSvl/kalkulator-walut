@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: honeydew;
+    text-align: center;
+}
+h1 {
+    margin: 25px;
+}
+.liczba1 {
+    margin: 25px;
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+}
+.currency-1, .currency-2{
+     margin-right: 25px;
+    width: 65px;
+    height: 35px;
+    font-size: 20px; 
+    
+}
+
+label {
+    font-size: 26px;
+}
+#wynik {
+    margin: 25px;
+    font-size: 25px;
+}
+.btn {
+    width: 200px;
+    height: 35px;
+    background-color: dodgerblue;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+}
