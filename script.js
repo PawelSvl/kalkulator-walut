@@ -10,17 +10,17 @@ function calculator() {
     if (liczba < 0)
         document.getElementById("wynik").innerHTML = "Podana ilość waluty powinna być wartością dodatnią!!!";
     else if ((waluta == "PLN" && waluta1 == "PLN") || (waluta == "USD" && waluta1 == "USD") || (waluta == "EUR" && waluta1 == "EUR"))
-        document.getElementById("wynik").innerHTML = liczba + waluta + " = " + liczba * nic + waluta1;
+        document.getElementById("wynik").innerHTML = liczba + waluta + " = " + (liczba * nic).toFixed(2) + waluta1;
     else if ((waluta == "PLN" && waluta1 == "USD"))
-        document.getElementById("wynik").innerHTML = liczba + waluta + " = " + liczba / dolar + waluta1;
+        document.getElementById("wynik").innerHTML = liczba + waluta + " = " + (liczba / dolar).toFixed(2) + waluta1;
     else if (waluta == "USD" && waluta1 == "PLN")
-        document.getElementById("wynik").innerHTML = liczba + waluta + " = " + liczba * dolar + waluta1;
+        document.getElementById("wynik").innerHTML = liczba + waluta + " = " + (liczba * dolar).toFixed(2) + waluta1;
     else if ((waluta == "PLN" && waluta1 == "EUR"))
-        document.getElementById("wynik").innerHTML = liczba + waluta + " = " + liczba / euro + waluta1;
+        document.getElementById("wynik").innerHTML = liczba + waluta + " = " + (liczba / euro).toFixed(2) + waluta1;
     else if (waluta == "EUR" && waluta1 == "PLN")
-        document.getElementById("wynik").innerHTML = liczba + waluta + " = " + liczba * euro + waluta1;
+        document.getElementById("wynik").innerHTML = liczba + waluta + " = " + (liczba * euro).toFixed(2) + waluta1;
     else if (waluta == "USD" && waluta1 == "EUR")
-        document.getElementById("wynik").innerHTML = liczba + waluta + " = " + liczba * dolar / euro + waluta1;
+        document.getElementById("wynik").innerHTML = liczba + waluta + " = " + (liczba * dolar / euro).toFixed(2) + waluta1;
     else if (waluta == "EUR" && waluta1 == "USD")
-        document.getElementById("wynik").innerHTML = liczba + waluta + " = " + liczba * euro / dolar + waluta1;
+        document.getElementById("wynik").innerHTML = liczba + waluta + " = " + (liczba * euro / dolar).toFixed(2) + waluta1;
 }
